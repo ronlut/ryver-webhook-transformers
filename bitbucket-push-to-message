@@ -1,0 +1,3 @@
+{
+    "body": "**{{ actor.display_name }}** pushed to [{{ repository.name }}]({{ repository.links.html.href }}), {{ push.changes[0].new.name }} ([compare]({{ push.changes[0].links.html.href }}))\n | Name | Message | Commit |\n|:---|:---|:--:|\n {% query $.push.changes[0].commits.* %}| {{ author.user.username}} | {{ message | replace: \"#\", \"\\#\" | strip_newlines }} | [link]({{ links.html.href }}) \n {% endquery %}"
+}
