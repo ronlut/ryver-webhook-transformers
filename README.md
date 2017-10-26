@@ -1,2 +1,2 @@
 # ryver-webhook-transformers
-Collection of Ryver transformers to use for incoming webhooks
+Collection of (custom) transforms to use with Ryver incoming webhooks Edit
